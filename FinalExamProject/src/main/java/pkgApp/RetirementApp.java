@@ -12,6 +12,7 @@ import javafx.scene.layout.BorderPane;
 public class RetirementApp extends Application {
 
 	private RetirementController controller;
+	private Stage primaryStage;
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -43,6 +44,11 @@ public class RetirementApp extends Application {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public Stage getPrimaryStage()
+	{
+		return primaryStage;
 	}
 
 }
